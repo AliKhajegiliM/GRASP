@@ -1,6 +1,6 @@
 # GRASP
 
-GRASP is a toy implementation demonstrating graph-based aggregation of histopathology features using multiple magnifications. The repository includes sample data and scripts for building graphs from feature files, training a GRASP model, and reporting the evaluation metrics.
+GRASP is an implementation demonstrating graph-based aggregation of histopathology features using multiple magnifications. The repository includes sample data and scripts for building graphs from feature files, training a GRASP model, and reporting the evaluation metrics.
 
 ## Directory layout
 
