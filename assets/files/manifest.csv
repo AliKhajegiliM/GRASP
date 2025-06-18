@@ -1,0 +1,7 @@
+patient_id,slide_id,subtype,stage,slide_path
+p1,4A,CC,Stage IV,./assets/features/4A.h5
+p4,5A,CC,Stage IV,./assets/features/5A.h5
+p2,12B,CC,Stage IV,./assets/features/12B.h5
+p3,13B,LGSC,Stage IV,./assets/features/13B.h5
+p5,14B,LGSC,Stage IV,./assets/features/14B.h5
+p6,15B,LGSC,Stage IV,./assets/features/15B.h5

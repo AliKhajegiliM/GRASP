@@ -1,0 +1,53 @@
+{
+    "fold-1": {
+        "slide_id": {
+            "train": ["5A", "12B", "13B", "14B"],
+            "val": ["4A"],
+            "test": ["15B"]
+        },
+        "feature_path": {
+            "train": ["./assets/features/5A.h5", "./assets/features/12B.h5", "./assets/features/13B.h5", "./assets/features/14B.h5"],
+            "val": ["./assets/features/4A.h5"],
+            "test": ["./assets/features/15B.h5"]
+        },
+        "label": {
+            "train": ["CC", "CC", "LGSC", "LGSC"],
+            "val": ["CC"],
+            "test": ["LGSC"]
+        }
+    },
+    "fold-2": {
+        "slide_id": {
+            "train": ["4A", "13B", "14B", "15B"],
+            "val": ["5A"],
+            "test": ["12B"]
+        },
+        "feature_path": {
+            "train": ["./assets/features/4A.h5", "./assets/features/13B.h5", "./assets/features/14B.h5", "./assets/features/15B.h5"],
+            "val": ["./assets/features/5A.h5"],
+            "test": ["./assets/features/12B.h5"]
+        },
+        "label": {
+            "train": ["CC", "LGSC", "LGSC", "LGSC"],
+            "val": ["CC"],
+            "test": ["CC"]
+        }
+    },
+    "fold-3": {
+        "slide_id": {
+            "train": ["4A", "5A", "12B", "15B"],
+            "val": ["13B"],
+            "test": ["14B"]
+        },
+        "feature_path": {
+            "train": ["./assets/features/4A.h5", "./assets/features/5A.h5", "./assets/features/12B.h5", "./assets/features/15B.h5"],
+            "val": ["./assets/features/13B.h5"],
+            "test": ["./assets/features/14B.h5"]
+        },
+        "label": {
+            "train": ["CC", "CC", "CC", "LGSC"],
+            "val": ["LGSC"],
+            "test": ["LGSC"]
+        }
+    }
+}

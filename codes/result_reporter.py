@@ -31,7 +31,7 @@ parser.add_argument("--weight_decay", nargs='+', type=float, default = [0.0001],
 parser.add_argument("--epochs", nargs='+', type=int, default = [50],  help="<<<< --epochs 50 >>>> ")
 parser.add_argument('--path_to_outputs', type=str, required=True, help='path to the data fold json file')
 parser.add_argument('--num_classes', nargs='+', type=int, default=[2], help='number of classes in the data')
-parser.add_argument('--path_to_save_fig', type=str, required=True, help='path to the data fold json file')
+#parser.add_argument('--path_to_save_fig', type=str, required=True, help='path to the data fold json file')
 parser.add_argument('--is_external', type=bool, default=False, help='is your dataset an external evaluation')
 args = parser.parse_args()
 
@@ -45,8 +45,8 @@ lr = args.lr[0]
 weight_decay = args.weight_decay[0]
 epochs = args.epochs[0]
 path_to_outputs = args.path_to_outputs + encoder +'/'
-path_to_save_fig = args.path_to_save_fig + encoder
-os.makedirs(path_to_save_fig, exist_ok=True)
+# path_to_save_fig = args.path_to_save_fig + encoder
+# os.makedirs(path_to_save_fig, exist_ok=True)
 torch.manual_seed(256)
 random_seeds = torch.randint(0, 10000, (10,)).numpy()
 multi_mag = ["GRASP", "ZoomMIL", "H2MIL", "HiGT", "GRASP_D", "GRASP_dropout", "GRASP_1"]
@@ -100,15 +100,15 @@ def rank_founder(results, random_seeds, topk=3,criterion='bacc'):
     print("Ranking of models based on the number of times their seed appears in the top-" + str(topk) + ":")
     for model, score in model_score.items():
         print(f"{model}: {score} times")
-    df = pd.DataFrame(list(model_score.items()), columns=['Model', 'Repetitions']).set_index('Model').sort_index()
-    ax = sns.barplot(x=df.index, y='Repetitions', data=df)
-    # Rotate x-axis labels by 45 degrees
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=-90, ha="right")
-    plt.title('The Frequency of model presence in top ' + str(topk) +  ' ranks')
-    # Format y-axis as integers
-    plt.tight_layout()
-    plt.savefig(path_to_save_fig + '/bar_plot_top'+ str(topk) + '.png')
-    plt.show()
+    # df = pd.DataFrame(list(model_score.items()), columns=['Model', 'Repetitions']).set_index('Model').sort_index()
+    # ax = sns.barplot(x=df.index, y='Repetitions', data=df)
+    # # Rotate x-axis labels by 45 degrees
+    # ax.set_xticklabels(ax.get_xticklabels(), rotation=-90, ha="right")
+    # plt.title('The Frequency of model presence in top ' + str(topk) +  ' ranks')
+    # # Format y-axis as integers
+    # plt.tight_layout()
+    # plt.savefig(path_to_save_fig + '/bar_plot_top'+ str(topk) + '.png')
+    # plt.show()
 
 
 results ={}

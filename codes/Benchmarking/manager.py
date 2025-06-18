@@ -65,7 +65,7 @@ class graph_manager():
                             raise NotImplementedError(f"Yo bro, this {self.model_name} has not been implemented!")
                         #print(outputs)
                         _, preds = torch.max(outputs, 1)
-                        #print(outputs, preds)
+                        #print(outputs, preds, labels)
                         if weights == None:
                             loss = F.cross_entropy(outputs, labels)
                         else:
@@ -83,6 +83,7 @@ class graph_manager():
                     
                     # statistics
                     running_loss += loss.item() * size_data
+                    #print(running_loss)
                     running_corrects += torch.sum(torch.tensor(self.preds[phase] == self.labels[phase]))
 
                 if phase == 'train':
