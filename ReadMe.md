@@ -1,6 +1,6 @@
 # GRASP
 
-[GRASP](https://openreview.net/pdf?id=k6xlOfZnTC) is an implementation demonstrating graph-based aggregation of histopathology features using multiple magnifications. The repository includes sample data and scripts for building graphs from feature files, training a GRASP model, and reporting the evaluation metrics.
+[GRASP](https://openreview.net/pdf?id=k6xlOfZnTC) official object-oriented implementation, demonstrating graph-based aggregation of histopathology instances using multiple microscopic magnifications. The repository includes sample data and scripts for building graphs from feature files, training a GRASP model, and reporting the evaluation metrics.
 
 ## Directory layout
 
