@@ -1,0 +1,25 @@
+name: cuda6
+channels:
+  - pytorch
+  - dglteam
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - cudatoolkit
+  - dgl
+  - h5py
+  - pillow
+  - opencv
+  - pip
+  - pip:
+    - timm
+    - transformers
+
