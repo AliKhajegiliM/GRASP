@@ -13,11 +13,15 @@ Note: This repository is being gradually updated!
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.9+
 - PyTorch and DGL (GPU enabled is recommended)
-- (Optional) Conda environment named `cuda6` as referenced in the scripts
+- Use Conda to create the `grasp` environment defined in `assets/grasp.yml`
 
-Install the required Python packages according to your PyTorch and DGL versions.
+Run the following to create and activate the environment:
+```bash
+conda env create -f assets/grasp.yml
+conda activate grasp
+```
 
 ## 1. Graph construction
 
