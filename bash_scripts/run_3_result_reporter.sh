@@ -1,7 +1,7 @@
 #!/bin/bash
 
 conda init
-conda activate cuda6
+conda activate grasp
 
 python3 ./codes/result_reporter.py \
   --batch_size 8 \

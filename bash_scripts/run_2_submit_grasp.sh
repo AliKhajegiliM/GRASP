@@ -17,7 +17,7 @@ elif [ "$encoder" == "Lunit-Dino" ]; then
 fi
 
 conda init
-conda activate cuda6
+conda activate grasp
 
 # For a full set with 5 subtypes, you should enter classes like this --classes CC:0 EC:1 HGSC:2 LGSC:3 MC:4  ; However, here we test 
 # with a toy dataset, so --classes CC:0 LGSC:1 has been passed.

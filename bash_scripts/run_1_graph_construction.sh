@@ -1,3 +1,8 @@
+
+
+conda init
+conda activate grasp
+
 #!/bin/bash
 
 python app.py \
