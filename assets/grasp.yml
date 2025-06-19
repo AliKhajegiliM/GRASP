@@ -1,0 +1,26 @@
+name: grasp
+channels:
+  - pytorch
+  - dglteam/label/cu116
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - cudatoolkit
+  - dgl=1.0.1.cu116=py39_0
+  - h5py
+  - pillow
+  - opencv
+  - pip
+  - pip:
+      - timm
+      - transformers
+      - prettytable
